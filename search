@@ -1,0 +1,32 @@
+#!/bin/bash 
+
+if [ $1 = --help ]
+then
+	 echo test.sh \(フォルダ名\) \(正規表現\)
+	 exit 0
+fi
+
+echo $1/
+echo
+if [ $1 ]; then
+	LS=$(ls $1)
+	for ele in ${LS// /}
+	do
+		if test -d $1/$ele; then
+			:
+		else
+			if [[ $ele =~ c$|__ ]]; then
+				:
+			else
+				ee=$(cat < $1/$ele | grep -nE $2 | more)
+				if [ -n "$ee" ]; then
+					echo
+					echo $ele"  "
+					echo $ee
+				fi
+			fi
+		fi
+	done
+else
+	echo "input folda name"
+fi
