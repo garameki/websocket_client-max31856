@@ -14,6 +14,7 @@ Description=$_description
 
 [Service]
 ExecStart=$_STEM.sh
+Restart=always
 
 [Install]
 WantedBy=multi-user.target
