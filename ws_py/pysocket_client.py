@@ -7,6 +7,7 @@ from mkhash import mkhash_16bytes_b64 as mkhash_b64
 from send import send
 from receive import receive
 from close import close
+from error import *
 
 from rnd import getRND
 

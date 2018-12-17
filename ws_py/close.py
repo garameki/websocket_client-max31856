@@ -5,6 +5,7 @@ from frame import Frame
 
 import socket
 import select
+from error import *
 
 
 def close(sock):
