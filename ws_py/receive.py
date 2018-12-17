@@ -4,6 +4,7 @@
 import socket
 import select
 import six
+from error import *
 
 def receive(sock):
 	rr,ww,ee = select.select([sock],[],[],2)

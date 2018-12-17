@@ -5,6 +5,7 @@ from lib import pt
 from rnd import getRND
 from mask import mask_data
 from mkhash import mkhash_16bytes_b64 as mkhash_b64
+from error import *
 
 from frame import Frame
 
