@@ -1,3 +1,20 @@
+## 0.2.6 (12月 17, 2018)
+  - Fix that service works collectly 	modified:   setting.sh 	modified:   start.sh 	modified:   websocket-client-max31856-9801.service 	modified:   websocket-client-max31856-9801.sh  v0.2.5...HEAD
+  - Bump version to 0.2.5.  v0.2.5...HEAD
+  - Fix 	modified:   websocket-client-max31856-9801.sh modify file name  v0.2.5...HEAD
+  - Bump version to 0.2.4.  v0.2.5...HEAD
+  - Remove verbose import 	modified:   frame.py 	modified:   mask.py 	modified:   receive.py 	modified:   send.py  v0.2.5...HEAD
+  - Bump version to 0.2.3.  v0.2.5...HEAD
+  - Bump version to 0.2.2.  v0.2.5...HEAD
+  - Fix RegExp 	modified:   ping.sh 	modified:   websocket-client-max31856-9801.sh  v0.2.5...HEAD
+  - Create new release-0.2 branch  v0.2.5...HEAD
+  - Merge from the branch release-0.1  v0.2.5...HEAD
+  - Modify Unit Add next statement 'Restart=always' 	modified:   setting.sh 	modified:   websocket-client-max31856-9801.service  v0.2.5...HEAD
+  - Add two new command 	new file:   ping.sh 	new file:   renewws_py.sh  v0.2.5...HEAD
+  - Add next phrase 'from error import *' 	modified:   close.py 	modified:   frame.py 	modified:   pysocket_client.py 	modified:   receive.py 	modified:   send.py  v0.2.5...HEAD
+  - Add VERSION and CHANGELOG.md files, Bump version to v0.1.0.  v0.2.5...HEAD
+  - First commit  v0.2.5...HEAD
+
 ## 0.2.5 (12月 17, 2018)
   - Fix 	modified:   websocket-client-max31856-9801.sh modify file name  v0.2.4...HEAD
   - Bump version to 0.2.4.  v0.2.4...HEAD

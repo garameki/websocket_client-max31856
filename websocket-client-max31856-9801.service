@@ -3,7 +3,6 @@ Description=Send sockets of temperature from max31856
 
 [Service]
 ExecStart=/home/pi/src/websocket/client-max31856/websocket-client-max31856-9801.sh
-Restart=always
 
 [Install]
 WantedBy=multi-user.target
