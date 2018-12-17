@@ -28,7 +28,7 @@ class Pysocket:
 		except BrokenPipeError:
 			print("\nパイプが切断されました。")
 		except ConnectionRefusedError:
-			print("\n接続できませんでした。HOST:{} PORT:{}".format(HOST,PORT))
+			print("\n接続できませんでした。HOST:{} PORT:{}".format(host,port))
 		except KeyboardInterrupt:
 			close(self.sock)
 			receive(self.sock)
