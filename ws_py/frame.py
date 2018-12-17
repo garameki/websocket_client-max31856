@@ -7,7 +7,6 @@ from error import *
 
 
 import six
-import socket
 import select
 
 
@@ -16,8 +15,8 @@ class Frame:
 	OPCODE_TEXT = 0x1
 	OPCODE_CLOSE = 0x8
 
-	@classmethod
-	def create(sock,opcode,msg):
+	@staticmethod
+	def create(opcode,msg):
 		fin = 1
 		rsv1 = 0
 		rsv2 = 0
@@ -46,3 +45,8 @@ class Frame:
 
 		frame = frame_header_bytes + mask_key_bytes + data_masked_bytes
 		return frame
+
+if __name__ == '__main__':
+	print(Frame.OPCODE_CLOSE)
+	print(Frame.create(Frame.OPCODE_CLOSE,"dada dddd"))
+
