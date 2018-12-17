@@ -3,7 +3,6 @@
 
 import socket
 import select
-import six
 from error import *
 
 def receive(sock):

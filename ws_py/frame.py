@@ -1,16 +1,11 @@
 #!/usr/bin/enb python3
 #_*_ coding : utf-8 _*_
 
-from lib import pt
 from rnd import getRND
 from mask import mask_data
-from mkhash import mkhash_16bytes_b64 as mkhash_b64
 from error import *
 
-import base64
-import hashlib
 
-import numpy
 import six
 import socket
 import select
@@ -37,17 +32,17 @@ class Frame:
 		if length > 125 :
 			raise TooLongMessaeError
 
-		byte = fin *   0x80;pt("byte = fin",byte)
-		byte += rsv1 * 0x40;pt("byte += rsv1 * 0x40000000",byte)
-		byte += rsv2 * 0x20;pt("byte += rsv2 * 0x20000000",byte)
-		byte += rsv3 * 0x10;pt("byte += rsv3 * 0x10000000",byte)
-		byte += opcode;pt("byte += opcode",byte)
-		frame_header = chr(byte);pt("frame_header = chr(byte)",frame_header)
-		frame_header += chr(mask * 0x80 + length);pt('frame_header += chr(mask * 0x80 + length)',frame_header)
-		frame_header_bytes = six.b(frame_header);pt('frame_header_bytes = six.b(frame_header)',frame_header_bytes)
+		byte = fin *   0x80
+		byte += rsv1 * 0x40
+		byte += rsv2 * 0x20
+		byte += rsv3 * 0x10
+		byte += opcode
+		frame_header = chr(byte)
+		frame_header += chr(mask * 0x80 + length)
+		frame_header_bytes = six.b(frame_header)
 
-		mask_key = getRND(4);pt('mask_key = rnds = getRND(4)',mask_key)
+		mask_key = getRND(4)
 		mask_key_bytes,data_masked_bytes = mask_data(mask_key,msg)
 
-		frame = frame_header_bytes + mask_key_bytes + data_masked_bytes;pt('frame = frame_header_bytes + mask_key_bytes + data_masked_bytes',frame)
+		frame = frame_header_bytes + mask_key_bytes + data_masked_bytes
 		return frame
