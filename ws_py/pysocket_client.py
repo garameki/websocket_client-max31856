@@ -3,20 +3,14 @@
 
 from lib import pt
 from handshake import handshake
-from mkhash import mkhash_16bytes_b64 as mkhash_b64
 from send import send
 from receive import receive
 from close import close
 from error import *
 
-from rnd import getRND
-
-import time
 import socket
 import select
-import six
 
-import sys
 
 class Pysocket:
 	def __init__(self,host,port):
@@ -28,7 +22,7 @@ class Pysocket:
 		except BrokenPipeError:
 			print("\nパイプが切断されました。")
 		except ConnectionRefusedError:
-			print("\n接続できませんでした。HOST:{} PORT:{}".format(HOST,PORT))
+			print("\n接続できませんでした。HOST:{} PORT:{}".format(host,port))
 		except KeyboardInterrupt:
 			close(self.sock)
 			receive(self.sock)
