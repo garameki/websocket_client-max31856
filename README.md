@@ -63,10 +63,10 @@ toCを頭に付けた後、温度文字列を送っています。
   
 必要なファイル  
 ==============  
-	renewmax.sh  
-		~/src/spi/max31856/max31856.py  
-	renewws_py.sh  
-		~/src/websocket/ws_py/  
+	renewmax.shには  
+		~/src/spi/max31856/max31856.pyが必要
+	renewws_py.shには  
+		~/src/websocket/ws_py/が必要  
   
 その他  
 ======  
