@@ -15,6 +15,7 @@ def receive(sock):
 	#	print(mm,[format(ele,'02x') for ele in data])
 		return data
 	else:
-		raise UnavailableToReceiveDataError
-
+		print("Data was not returned in select.select() in receive.py")
+		return ""
+	
 
