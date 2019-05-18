@@ -1,3 +1,31 @@
+## 0.4.2 (5月 18, 2019)
+  - Bump version to 0.4.1.  v0.4.1...HEAD
+  - Create new release-0.4 branch  v0.4.1...HEAD
+  - Bump version to 0.3.2.  v0.4.1...HEAD
+  - Merge from the branch release-0.3  v0.4.1...HEAD
+  - Bump version to 0.3.1.  v0.4.1...HEAD
+  - Merge from the branch release-0.2  v0.4.1...HEAD
+  - Create new release-0.3 branch  v0.4.1...HEAD
+  - Modify to print with color 	modified:   search  v0.4.1...HEAD
+  - Bump version to 0.2.7.  v0.4.1...HEAD
+  - Delete unnecessary imports 	modified:   pysocket_client.py  v0.4.1...HEAD
+  - Bump version to 0.2.6.  v0.4.1...HEAD
+  - Fix that service works collectly 	modified:   setting.sh 	modified:   start.sh 	modified:   websocket-client-max31856-9801.service 	modified:   websocket-client-max31856-9801.sh  v0.4.1...HEAD
+  - Bump version to 0.2.5.  v0.4.1...HEAD
+  - Fix 	modified:   websocket-client-max31856-9801.sh modify file name  v0.4.1...HEAD
+  - Bump version to 0.2.4.  v0.4.1...HEAD
+  - Remove verbose import 	modified:   frame.py 	modified:   mask.py 	modified:   receive.py 	modified:   send.py  v0.4.1...HEAD
+  - Bump version to 0.2.3.  v0.4.1...HEAD
+  - Bump version to 0.2.2.  v0.4.1...HEAD
+  - Fix RegExp 	modified:   ping.sh 	modified:   websocket-client-max31856-9801.sh  v0.4.1...HEAD
+  - Merge from the branch release-0.1  v0.4.1...HEAD
+  - Create new release-0.2 branch  v0.4.1...HEAD
+  - Modify Unit Add next statement 'Restart=always' 	modified:   setting.sh 	modified:   websocket-client-max31856-9801.service  v0.4.1...HEAD
+  - Add two new command 	new file:   ping.sh 	new file:   renewws_py.sh  v0.4.1...HEAD
+  - Add next phrase 'from error import *' 	modified:   close.py 	modified:   frame.py 	modified:   pysocket_client.py 	modified:   receive.py 	modified:   send.py  v0.4.1...HEAD
+  - Add VERSION and CHANGELOG.md files, Bump version to v0.1.0.  v0.4.1...HEAD
+  - First commit  v0.4.1...HEAD
+
 ## 0.4.1 (5月 18, 2019)
   - Create new release-0.4 branch  v0.4.0...HEAD
   - Bump version to 0.3.2.  v0.4.0...HEAD
