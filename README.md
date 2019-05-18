@@ -56,7 +56,22 @@ Raspberry Pi 3B+ と Max31856モジュールを利用します。
 一秒ごとに温度を送ります。  
 書式はサーバーにあわせてあります。  
 toCを頭に付けた後、温度文字列を送っています。  
-
-
-
+  
+置く場所  
+========  
+~/src/websocket/client-max31856/  
+  
+必要なファイル  
+==============  
+	renewmax.sh  
+		~/src/spi/max31856/max31856.py  
+	renewws_py.sh  
+		~/src/websocket/ws_py/  
+  
+その他  
+======  
+	フォルダws_pyは  
+	renewws_py.shによって作成された  
+	~/src/websocket/ws_py/のコピーです。  
+  
 
