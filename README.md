@@ -49,7 +49,13 @@ LICENSE
 There is third party's LICENSE in "websocket/".  
 Others are under MIT license.  
   
-  
+説明  
+====  
+Raspberry Pi 3B+ と Max31856モジュールを利用します。  
+ウェブソケットサーバーの9801番ポート(default)に接続して  
+一秒ごとに温度を送ります。  
+書式はサーバーにあわせてあります。  
+toCを頭に付けた後、温度文字列を送っています。  
 
 
 
